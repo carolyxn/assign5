@@ -1,5 +1,3 @@
-"""Regression tests for age calculation (expected behavior matches the repo's initial commit)."""
-
 import sys
 from datetime import datetime
 from pathlib import Path

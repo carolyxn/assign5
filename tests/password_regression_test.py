@@ -1,5 +1,3 @@
-"""Regression tests for password validation (expected behavior matches the repo's initial commit)."""
-
 import sys
 from pathlib import Path
 

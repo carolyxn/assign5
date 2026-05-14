@@ -7,7 +7,7 @@ name = "pypi"
 pytest = "*"
 datetime = "==5.5"
 pathlib = "==1"
-app = {file = ".", editable = true}
+app = {path = ".", editable = true}
 
 [dev-packages]
 
