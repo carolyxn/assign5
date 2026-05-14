@@ -71,8 +71,8 @@ class UserProfile:
         Returns:
             True if password meets requirements, False otherwise
         """
-        regex = r'^(?=^[A-Z])(?=.*[a-z]?)(?=.*\d)(?=.*[@$!%*?&])[A-z\d@$!%*?&]{8,}$'
-        return re.match(regex, password) is not None
+        password_pattern = r'^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$'
+        return re.match(password_pattern, password) is not None
     
     @staticmethod
     def valid_dob(dob: str) -> bool:
