@@ -61,8 +61,7 @@ class UserProfileManager:
         Returns:
             List of UserProfile objects sorted by age
         """
-        profiles = sorted(self.user_profiles.values(), key=lambda p: p.get_age(), reverse=True)
-        return profiles
+        return sorted(self.user_profiles.values(), key=lambda p: p.get_age(), reverse=True)
     
     def sort_profiles_by_name(self):
         """Sort profiles by name alphabetically.
